@@ -12,7 +12,7 @@ TL: [Emilio Carrozinno](https://www.linkedin.com/in/emilio-carrozzino-221346183/
 UX: [Alinson Paez]()  
 FS: [Francisco D. Molina](https://github.com/TheFranciscoMolina)  
 FS: [Manuel Romero]()  
-FS: [Carlos Tineo]()  
+FS: [Carlos Tineo](https://github.com/tineocac)  
 FS: [Martin Maldonado]()  
 FS: [David Castro]()  
 ## Dependencias
