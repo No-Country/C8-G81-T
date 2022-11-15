@@ -11,7 +11,7 @@ TL: [Emilio Carrozinno](https://www.linkedin.com/in/emilio-carrozzino-221346183/
 ### Developers Team :
 UX: [Alinson Paez](https://github.com/Alipaez33)  
 FS: [Francisco D. Molina](https://github.com/TheFranciscoMolina)  
-FS: [Manuel Romero]()  
+FS: [Manuel Romero](https://github.com/maalroba22)  
 FS: [Carlos Tineo](https://github.com/tineocac)  
 FS: [Martin Maldonado]()  
 FS: [David Castro]()  
