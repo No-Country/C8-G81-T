@@ -13,7 +13,7 @@ UX: [Alinson Paez](https://github.com/Alipaez33)
 FS: [Francisco D. Molina](https://github.com/TheFranciscoMolina)  
 FS: [Manuel Romero](https://github.com/maalroba22)  
 FS: [Carlos Tineo](https://github.com/tineocac)  
-FS: [Martin Maldonado]()  
+FS: [Martin Maldonado](https://github.com/martinsoto13)  
 FS: [David Castro]()  
 ## Dependencias
 El desarrollo se lleva a cabo con las siguientes tecnologías:
