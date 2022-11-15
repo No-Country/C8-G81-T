@@ -14,7 +14,7 @@ FS: [Francisco D. Molina](https://github.com/TheFranciscoMolina)
 FS: [Manuel Romero](https://github.com/maalroba22)  
 FS: [Carlos Tineo](https://github.com/tineocac)  
 FS: [Martin Maldonado](https://github.com/martinsoto13)  
-FS: [David Castro]()  
+FS: [David Castro](https://github.com/deca-dev)  
 ## Dependencias
 El desarrollo se lleva a cabo con las siguientes tecnologías:
 
