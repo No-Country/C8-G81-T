@@ -21,8 +21,8 @@ El desarrollo se lleva a cabo con las siguientes tecnologías:
 - `Javascript`
 - `Node.js`
 - `Express`
-- `Sequelize`
-- `PostgreSQL`
+- `Prisma`
+- `MySQL`
 - `React`
 - `Redux`
 - `Tailwind CSS`
