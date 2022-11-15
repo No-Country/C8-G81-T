@@ -9,7 +9,7 @@ Quienes participamos de este proyecto y el acceso a nuestro Github o LinkedIn:
 TL: [Emilio Carrozinno](https://www.linkedin.com/in/emilio-carrozzino-221346183/)  
 
 ### Developers Team :
-UX: [Alinson Paez]()  
+UX: [Alinson Paez](https://github.com/Alipaez33)  
 FS: [Francisco D. Molina](https://github.com/TheFranciscoMolina)  
 FS: [Manuel Romero]()  
 FS: [Carlos Tineo](https://github.com/tineocac)  
