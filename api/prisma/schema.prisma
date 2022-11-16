@@ -22,4 +22,19 @@ model Patiens {
   status Boolean @default(true)
 }
 
+model Doctors {
+  id Int @id @default(autoincrement())
+  dni Int
+  firstname String
+  lastname String
+  specialty String
+  email String @unique
+  password String
+  phone String
+  role    Role     @default(AVAILIBLE)
+}
 
+enum Role {
+  OCUCUPIED
+  AVAILIBLE
+}
