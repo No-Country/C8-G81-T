@@ -1,4 +1,5 @@
 const contoladorPacientes = require('../controllers/pacientes')
+
 module.exports = (app)=>{
   app
   .route('/pacientes')
