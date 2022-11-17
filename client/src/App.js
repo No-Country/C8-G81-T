@@ -1,19 +1,24 @@
-import './App.css';
-import {Routes, Route} from 'react-router-dom'
-import ProfilePage from './views/Profile';
+import React, { Suspense } from "react";
+import { Routes, Route } from "react-router-dom";
+const DefaultLayout = React.lazy(() => import("./layout/DefaultLayout"));
+const Home = React.lazy(() => import("./views/Home/"));
+const ProfilePage = React.lazy(() => import("./views/Profile"));
 
 function App() {
   return (
-    <div className="App">
-      <h1>H test</h1>
-      <Routes>
-        <Route path='/' element={<div>Home</div>}/>
-        <Route path='/profile' element={<ProfilePage/>}/>
-        <Route path='/login' element={<div>Login</div>}/>
-        <Route path='/turn' element={<div>Turn</div>}/>
-        <Route path='/register' element={<div>Register</div>}/>
-        <Route path='/patients' element={<div>Patients</div>}/>
-      </Routes>
+    <div>
+      <Suspense>
+        <Routes>
+          <Route path="/" element={<DefaultLayout />}>
+            <Route index element={<Home />} />
+            <Route path="register" element={<div>Register</div>} />
+            <Route path="profile" element={<ProfilePage />} />
+            <Route path="login" element={<div>Login</div>} />
+            <Route path="turn" element={<div>Turn</div>} />
+            <Route path="patients" element={<div>Patients</div>} />
+          </Route>
+        </Routes>
+      </Suspense>
     </div>
   );
 }
