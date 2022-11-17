@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 const DefaultLayout = React.lazy(() => import("./layout/DefaultLayout"));
 const Home = React.lazy(() => import("./views/Home/"));
 const ProfilePage = React.lazy(() => import("./views/Profile"));
+import Login from "./components/Login/Login";
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
             <Route index element={<Home />} />
             <Route path="register" element={<div>Register</div>} />
             <Route path="profile" element={<ProfilePage />} />
-            <Route path="login" element={<div>Login</div>} />
+            <Route path="login" element={<Login />} />
             <Route path="turn" element={<div>Turn</div>} />
             <Route path="patients" element={<div>Patients</div>} />
           </Route>
