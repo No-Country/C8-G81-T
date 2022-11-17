@@ -1,7 +1,7 @@
-const { PrismaClient } = require("@prisma/client")
-const prisma = new PrismaClient()
+/* const { PrismaClient } = require("@prisma/client")
+const prisma = new PrismaClient() */
 
-/* const prisma = require('../db/') */
+ const prisma = require('../db/') 
 
 /**
  * 
