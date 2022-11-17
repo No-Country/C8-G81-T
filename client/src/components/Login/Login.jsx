@@ -1,12 +1,11 @@
 import { Formik, Field, Form, ErrorMessage } from "formik";
-import * as Yup from "yup";
 import axios from 'axios'
 
 const Login = () => {
 
   const submit = (data) => {
     axios
-      .post('http://localhost:3001/ruta-login-por-crar', data)
+      .post('http://localhost:3001/ruta-login-por-crear', data)
       .then(res => {
         localStorage.setItem('token', res.token)
 
