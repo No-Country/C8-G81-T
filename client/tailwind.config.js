@@ -11,6 +11,12 @@ module.exports = {
     extend: {
       colors: {
         "dark-text": "#232323",
+        "light-grey": "#f1f3f3",
+        "dark-blue": "#1d3096",
+        "purple-normal": "#7b7bf3",
+        "sky-fluor": "#4edcdd",
+        "sky-light": "#7dd6f8",
+        "sky-normal": "#1aa7ec",
       },
     },
   },
