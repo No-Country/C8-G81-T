@@ -11,20 +11,22 @@ datasource db {
 }
 
 
-model Patiens {
+model Patients {
   id Int @id @default(autoincrement())
-  dni Int
+  dni Int @unique
   firstname String
   lastname String
   email String @unique
   password String
-  phone String
+  phone String @unique
   status Boolean @default(true)
+  consult Consul[]
+  
 }
 
 model Doctors {
   id Int @id @default(autoincrement())
-  dni Int
+  dni Int @unique
   firstname String
   lastname String
   specialty String
@@ -32,9 +34,38 @@ model Doctors {
   password String
   phone String
   role    Role     @default(AVAILIBLE)
+  consult Consul[]
+  calendar Calendar[]
+}
+
+model Consul{
+  id Int @id @default(autoincrement())
+  patientId Int
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+  patien Patients @relation(fields: [patientId], references: [id])
+  doctorId Int
+  doctor Doctors @relation(fields: [doctorId], references: [id])
+  calendarId Int
+  calendar Calendar @relation(fields: [calendarId], references: [id])
+}
+
+model Calendar {
+  id Int @id @default(autoincrement())
+  doctorId Int
+  doctor Doctors @relation(fields: [doctorId], references: [id])
+  date DateTime?
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+  consults Consul[]
 }
 
 enum Role {
+  OCUCUPIED
+  AVAILIBLE
+}
+
+enum Status {
   OCUCUPIED
   AVAILIBLE
 }
