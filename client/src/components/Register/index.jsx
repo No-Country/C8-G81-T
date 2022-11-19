@@ -2,7 +2,7 @@ import React from 'react';
 import {Formik, Field, Form, ErrorMessage } from "formik";
 import * as Yup from "yup";
 
-const RegisterFormik = () => {
+const Register = () => {
 
   const initialCredentials = {
     userFirstName: "",
@@ -130,4 +130,4 @@ const RegisterFormik = () => {
   )
 }
 
-export default RegisterFormik
+export default Register
