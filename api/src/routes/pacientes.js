@@ -6,4 +6,5 @@ module.exports = (app)=>{
   .get(contoladorPacientes.listarPacientes)
   .post(contoladorPacientes.addpacient)
   .put(contoladorPacientes.updatePatien)
+  .delete(contoladorPacientes.deletePatiens)
 }
