@@ -30,8 +30,35 @@ exports.addpacient = async (req, res) => {
       lastname,
       email,
       password,
-      phone,
-    },
-  });
-  res.status(200).send({ msg: "Patiens add Susccess" });
-};
+      phone
+    }
+
+  })
+  res.status(200).send({msg:'Patiens add Susccess'})
+
+}
+
+
+exports.updatePatien = ('/:id', async (req,res)=>{
+  const idpatiens = Number(req.query.id)
+  const { dni, firstname, lastname, email, password, phone } = req.body
+
+  const updatePatien = await prisma.patiens.update({
+      where:{
+        id:idpatiens
+      },
+      data:{
+        dni,
+        firstname,
+        lastname,
+        email,
+        password,
+        phone
+      }
+  })
+
+res.status(200).send(updatePatien)
+
+})
+
+   
