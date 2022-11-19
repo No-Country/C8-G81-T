@@ -1,29 +1,29 @@
 /* const { PrismaClient } = require("@prisma/client")
 const prisma = new PrismaClient() */
 
- const prisma = require('../db/') 
+const prisma = require("../db/");
 
 /**
- * 
+ *
  * @description ' Listar todos los pacientes'
  * @author Manuel Romero
- * @param {mostrar respuesta} res 
- * @param { datos del cliente recibidos por body} req 
+ * @param {mostrar respuesta} res
+ * @param { datos del cliente recibidos por body} req
  */
 
 exports.listarPacientes = async (req, res) => {
   try {
-    const allPacient = await prisma.patiens.findMany({})
-    res.status(200).send(allPacient)
+    const allPacient = await prisma.patients.findMany({});
+    res.status(200).send(allPacient);
   } catch (error) {
-    console.log(error)
+    console.log(error);
   }
-}
+};
 
 exports.addpacient = async (req, res) => {
-  const { dni, firstname, lastname, email, password, phone } = req.body
+  const { dni, firstname, lastname, email, password, phone } = req.body;
 
-  const addPatien = await prisma.patiens.create({
+  const addPatien = await prisma.patients.create({
     data: {
       dni,
       firstname,
@@ -57,9 +57,8 @@ exports.updatePatien = ('/:id', async (req,res)=>{
       }
   })
 
-
-
 res.status(200).send(updatePatien)
 
-
 })
+
+   
