@@ -62,3 +62,17 @@ res.status(200).send(updatePatien)
 })
 
    
+exports.deletePatiens = ('/:id', async (req,res)=>{
+  const idPatiens = Number(req.query.id)
+  const deletePatien = await prisma.patiens.update({
+
+      where:{
+        id:idPatiens
+      },
+      data:{
+        status:false
+      }
+  })
+  res.send(deletePatien)
+
+})
