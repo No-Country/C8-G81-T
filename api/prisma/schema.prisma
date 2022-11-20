@@ -69,3 +69,4 @@ enum Status {
   OCUCUPIED
   AVAILIBLE
 }
+
