@@ -4,4 +4,6 @@ module.exports =(app)=>{
     .route('/doctors')
     .get(controllersDoctors.getAllDoctors)
     .post(controllersDoctors.addDoctors)
+    .put(controllersDoctors.updateDoctors)
+    .delete(controllersDoctors.deleteDoctors)
 }
