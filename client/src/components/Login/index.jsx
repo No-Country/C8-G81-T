@@ -19,8 +19,8 @@ function Login() {
         validationSchema={schema}
         initialValues={{ email: "", password: "" }}
         onSubmit={(values) => {
-          alert(`Hi, I'm sorry you can't log in. The application is still under development.`)
-          // alert(JSON.stringify(values));
+          alert(`Hola, lamentamos decirte que no puedes iniciar sesión en estos momentos, aún seguimos desarrolando la aplicación.
+            Correo ingresado: ${values.email}`)
         }}
       >
         {({
@@ -34,7 +34,7 @@ function Login() {
           <div className="login">
             <div className="form">
               <form noValidate onSubmit={handleSubmit}>
-                <span>Login</span>
+                <span>Bienvenido</span>
                 <input
                   type="email"
                   name="email"
@@ -60,7 +60,7 @@ function Login() {
                 <p className="error">
                   {errors.password && touched.password && errors.password}
                 </p>
-                <button type="submit">Login</button>
+                <button type="submit">Iniciar sesión</button>
               </form>
             </div>
           </div>
