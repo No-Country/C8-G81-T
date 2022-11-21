@@ -32,7 +32,6 @@
 }
 
 .form button {
-  text-transform: uppercase;
   outline: 0;
   background: #f2f2f2;
   width: 100%;
@@ -46,8 +45,12 @@
   cursor: pointer;
 }
 
+.form button:hover{
+  background: rgba(78, 220, 211, 1);
+}
+
 .form button:active {
-  background: #395591;
+  background: #dbdbdb;
 }
 
 .form span {
@@ -61,7 +64,6 @@
   margin: 0 0 10px 10px;
   text-align: left;
   font-size: 13px;
-  /* font-weight: 800; */
-  color: red;
-  text-shadow: 2px 2px 5px black;
+  color:tomato;
+  text-shadow: 1px 1px 2px black;
 }
