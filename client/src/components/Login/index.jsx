@@ -2,7 +2,6 @@ import '../../styles/Login.css'
 import { Formik } from "formik";
 import * as Yup from "yup";
 
-// Creating schema
 const schema = Yup.object().shape({
   email: Yup.string()
     .required("Email is a required field")
