@@ -1,62 +1,73 @@
-import { Formik, Field, Form, ErrorMessage } from "formik";
-import axios from 'axios'
+import '../../styles/Login.css'
+import { Formik } from "formik";
+import * as Yup from "yup";
 
-const Login = () => {
+// Creating schema
+const schema = Yup.object().shape({
+  email: Yup.string()
+    .required("Email is a required field")
+    .email("Invalid email format"),
+  password: Yup.string()
+    .required("Password is a required field")
+    .min(8, "Password must be at least 8 characters"),
+});
 
-  const submit = (data) => {
-    axios
-      .post('http://localhost:3001/ruta-login-por-crear', data)
-      .then(res => {
-        localStorage.setItem('token', res.token)
-
-      })
-      .catch(error => {
-        if (error.response.status === 404) {
-          alert('wrong credentials')
-        }
-        console.log(error. response);
-      })
-  }
-
+function Login() {
   return (
-    <div>
-      <h3>Login</h3>
+    <>
       <Formik
-        onSubmit={submit}
+        validationSchema={schema}
+        initialValues={{ email: "", password: "" }}
+        onSubmit={(values) => {
+          alert(`Hi, I'm sorry you can't log in. The application is still under development.`)
+          // alert(JSON.stringify(values));
+        }}
       >
-        {({ errors, touched, isSubmitting }) => (
-          <Form>
-            <label htmlFor="email">Email:</label>
-            <Field
-              id="email"
-              name="email"
-              placeholder="example@mail.com"
-              type="email"
-            />
-            {errors.email && touched.email && (
-              <ErrorMessage component="div" name="email" />
-            )}
-            <label htmlFor="password">Contraseña:</label>
-            <Field
-              id="password"
-              name="password"
-              type="password"
-              placeholder="*****"
-            />
-            {errors.password && touched.password && (
-              <ErrorMessage component="div" name="password" />
-            )}
-            <button type="submit">Ingresar</button>
-            {isSubmitting ? (
-              <div>
-                <p>Enviando credenciales...</p>
-              </div>
-            ) : null}
-          </Form>
+        {({
+          values,
+          errors,
+          touched,
+          handleChange,
+          handleBlur,
+          handleSubmit,
+        }) => (
+          <div className="login">
+            <div className="form">
+              <form noValidate onSubmit={handleSubmit}>
+                <span>Login</span>
+                <input
+                  type="email"
+                  name="email"
+                  onChange={handleChange}
+                  onBlur={handleBlur}
+                  value={values.email}
+                  placeholder="Enter email id / username"
+                  className="form-control inp_text"
+                  id="email"
+                />
+                <p className="error">
+                  {errors.email && touched.email && errors.email}
+                </p>
+                <input
+                  type="password"
+                  name="password"
+                  onChange={handleChange}
+                  onBlur={handleBlur}
+                  value={values.password}
+                  placeholder="Enter password"
+                  className="form-control"
+                />
+                <p className="error">
+                  {errors.password && touched.password && errors.password}
+                </p>
+                <button type="submit">Login</button>
+              </form>
+            </div>
+          </div>
         )}
       </Formik>
-    </div>
+    </>
   );
-};
+}
 
 export default Login;
