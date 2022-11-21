@@ -60,6 +60,8 @@
 .form p.error {
   margin: 0 0 10px 10px;
   text-align: left;
-  font-size: 10px;
+  font-size: 13px;
+  /* font-weight: 800; */
   color: red;
+  text-shadow: 2px 2px 5px black;
 }
