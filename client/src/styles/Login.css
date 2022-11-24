@@ -59,7 +59,7 @@
   display: block;
 }
 
-.form p.error {
+.form p.error, .form .error {
   margin: 0 0 10px 10px;
   text-align: left;
   font-size: 13px;
