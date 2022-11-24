@@ -4,7 +4,7 @@ import LogoNav from "../../assets/Logo-text.png";
 const Header = () => {
   const [navbar, setNavbar] = useState(false);
   return (
-    <nav className="fixed top-0 w-full bg-light-grey shadow z-10">
+    <nav className="sticky top-0 z-50 w-full bg-light-grey shadow">
       <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">

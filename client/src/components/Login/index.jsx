@@ -1,6 +1,7 @@
 import '../../styles/Login.css'
 import { Formik } from "formik";
 import * as Yup from "yup";
+import { useNavigate } from 'react-router-dom';
 
 const schema = Yup.object().shape({
   email: Yup.string()
@@ -12,6 +13,9 @@ const schema = Yup.object().shape({
 });
 
 function Login() {
+
+  const navigate = useNavigate()
+
   return (
     <>
       <Formik
@@ -20,6 +24,8 @@ function Login() {
         onSubmit={(values) => {
           alert(`Hola, lamentamos decirte que no puedes iniciar sesión en estos momentos, aún seguimos desarrolando la aplicación.
             Correo ingresado: ${values.email}`)
+          navigate('/profile')
+
         }}
       >
         {({
