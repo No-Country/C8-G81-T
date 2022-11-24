@@ -8,6 +8,7 @@ const Register = () => {
     userFirstName: "",
     userLastname: "",
     userEmail: "",
+    userDni: "",
     userPhone: "",
     userPassword: "",
     userPasswordConfirm: "",
@@ -24,6 +25,10 @@ const Register = () => {
       .required("El e-mail es obligatorio")
       .min(6, "El e-mail ingresado es muy corto.")
       .max(38, "El e-mail ingresado es muy largo."),
+      userDni: Yup.string()
+      .min(7, "El dni del usuario es muy corto.")
+      .max(12, "El dni del usuario es muy largo.")
+      .required("El dni del usuario es requerido"),
     userPhone: Yup.string()
       .min(9, "El telefono del usuario es muy corto.")
       .max(18, "El telefono del usuario es muy largo.")
@@ -86,6 +91,16 @@ const Register = () => {
           />
           {errors.userEmail && touched.userEmail && (
             <ErrorMessage component="div" name="userEmail" />
+          )}
+          <label htmlFor="userDni">DNI:</label>
+          <Field
+            id="userDni"
+            name="userDni"
+            placeholder=""
+            type="number"
+          />
+          {errors.userDni && touched.userDni && (
+            <ErrorMessage component="div" name="userDni" />
           )}
           <label htmlFor="userPhone">Telefono:</label>
           <Field
