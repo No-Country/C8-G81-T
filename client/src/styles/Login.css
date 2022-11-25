@@ -6,7 +6,6 @@
 
 .form {
   position: relative;
-  z-index: 1;
   background: #1aa7ec;
   border-radius: 10px;
   max-width: 360px;
@@ -60,7 +59,7 @@
   display: block;
 }
 
-.form p.error {
+.form p.error, .form .error {
   margin: 0 0 10px 10px;
   text-align: left;
   font-size: 13px;
