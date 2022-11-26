@@ -11,33 +11,43 @@ exports.getAllDoctors = async (req, res) => {
 };
 /* metodo para Agregar */
 exports.addDoctors = async (req, res) => {
-  const { dni, firstname, lastname, specialty, email, password, phone } =
-    req.body;
+  try {
+    const { dni, firstname, lastname, specialty, email, password, phone } =
+      req.body;
+    const addDoctor = await prisma.doctors.create({
+      data: {
+        dni,
+        firstname,
+        lastname,
+        specialty,
+        email,
+        password,
+        phone,
+      },
+    });
+    res.send({ msg: "add doctors Susccess" });
 
-  const addDoctor = await prisma.doctors.create({
-    data: {
-      dni,
-      firstname,
-      lastname,
-      specialty,
-      email,
-      password,
-      phone,
-    },
-  });
-  res.send({ msg: "add doctors Susccess" });
+  } catch (error) {
+    console.log("create doctors failed", error)
+    res.status(400).send("create doctors failed", error)
+  }
+
+
+
+
 };
 
- /* metodo para actualizar */
-exports.updateDoctors = ('/:id', async (req,res)=>{
-  const idDoctors = Number(req.query.id)
+/* metodo para actualizar */
+exports.updateDoctors = ('/:id', async (req, res) => {
+
+  try {
+    const idDoctors = Number(req.query.id)
   const { dni, firstname, lastname, specialty, email, password, phone } = req.body;
-  
   const updateDoctros = await prisma.doctors.update({
-    where:{
-      id:idDoctors
+    where: {
+      id: idDoctors
     },
-    data:{
+    data: {
       dni,
       firstname,
       lastname,
@@ -48,17 +58,25 @@ exports.updateDoctors = ('/:id', async (req,res)=>{
     }
   })
   res.status(200).send(updateDoctros)
+
+  } catch (error) {
+    console.log("update doctors failed", error)
+    res.status(400).send("update doctors failed", error)
+  }
+  
+
+ 
 })
 
-exports.deleteDoctors = (':/id', async (req,res)=>{
+exports.deleteDoctors = (':/id', async (req, res) => {
   const idDoctorsDelete = Number(req.query.id)
 
   const deletedoctor = await prisma.doctors.update({
-    where:{
-      id:idDoctorsDelete
+    where: {
+      id: idDoctorsDelete
     },
-    data:{
-      role:'OCUCUPIED'
+    data: {
+      role: 'OCUCUPIED'
     }
   })
   res.json(deletedoctor)
