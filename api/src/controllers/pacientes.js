@@ -5,10 +5,9 @@ const prisma = require("../db/");
 
 /**
  *
- * @description ' Listar todos los pacientes'
+ * @description 'Crud Pacientes'
  * @author Manuel Romero
- * @param {mostrar respuesta} res
- * @param { datos del cliente recibidos por body} req
+ * @fecha 011-2022
  */
 
 exports.listarPacientes = async (req, res) => {
@@ -20,34 +19,14 @@ exports.listarPacientes = async (req, res) => {
   }
 };
 
+
 exports.addpacient = async (req, res) => {
-  const { dni, firstname, lastname, email, password, phone } = req.body;
 
-  const addPatien = await prisma.patients.create({
-    data: {
-      dni,
-      firstname,
-      lastname,
-      email,
-      password,
-      phone
-    }
+  try {
+    const { dni, firstname, lastname, email, password, phone } = req.body;
 
-  })
-  res.status(200).send({msg:'Patiens add Susccess'})
-
-}
-
-
-exports.updatePatien = ('/:id', async (req,res)=>{
-  const idpatiens = Number(req.query.id)
-  const { dni, firstname, lastname, email, password, phone } = req.body
-
-  const updatePatien = await prisma.patiens.update({
-      where:{
-        id:idpatiens
-      },
-      data:{
+    const addPatien = await prisma.patients.create({
+      data: {
         dni,
         firstname,
         lastname,
@@ -55,24 +34,70 @@ exports.updatePatien = ('/:id', async (req,res)=>{
         password,
         phone
       }
-  })
 
-res.status(200).send(updatePatien)
+    })
+    res.status(200).send({ msg: 'Patiens add Susccess' })
+
+  } catch (error) {
+    console.log("post Patiens failed", error)
+    res.status(400).send("post Patiens failed", error)
+  }
+
+}
+
+
+exports.updatePatien = ('/:id', async (req, res) => {
+
+  try {
+    const idpatiens = Number(req.query.id)
+    const { dni, firstname, lastname, email, password, phone } = req.body
+
+    const updatePatien = await prisma.patiens.update({
+      where: {
+        id: idpatiens
+      },
+      data: {
+        dni,
+        firstname,
+        lastname,
+        email,
+        password,
+        phone
+      }
+    })
+
+    res.status(200).send(updatePatien)
+
+
+  } catch (error) {
+    console.log("update Patiens failed", error)
+    res.status(400).send("update Patiens failed", error)
+
+  }
 
 })
 
-   
-exports.deletePatiens = ('/:id', async (req,res)=>{
-  const idPatiens = Number(req.query.id)
-  const deletePatien = await prisma.patiens.update({
 
-      where:{
-        id:idPatiens
+exports.deletePatiens = ('/:id', async (req, res) => {
+  try {
+    const idPatiens = Number(req.query.id)
+    const deletePatien = await prisma.patiens.update({
+
+      where: {
+        id: idPatiens
       },
-      data:{
-        status:false
+      data: {
+        status: false
       }
-  })
-  res.send(deletePatien)
+    })
+    res.send(deletePatien)
+
+  } catch (error) {
+    console.log("delete Patiens failed", error)
+    res.status(400).send("delete Patiens failed", error)
+
+  }
+
+
 
 })
