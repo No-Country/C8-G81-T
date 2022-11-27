@@ -15,3 +15,22 @@ exports.getAllCalendar = async(req,res)=>{
    res.status(200).send(getAllCalendar)
 
 }
+
+exports.addCalendar = async (req,res)=>{
+const {doctorId,date} = req.body 
+
+const postcalendar = await prisma.calendar.create({
+    data:{
+        doctorId,
+        date:date
+
+    }
+})
+
+  
+    res.status(200).json(postcalendar)
+
+
+
+
+}
