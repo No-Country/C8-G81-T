@@ -7,7 +7,7 @@ const Hero = () => {
         <div className="hero-overlay bg-opacity-60"></div>
         <div className="hero-content text-center text-neutral-content relative">
           <div className="max-w-md">
-            <p className="mb-5 text-3xl text-white"><span className="text-sky-normal">Medicalendar</span> nupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+            <p className="mb-5 text-3xl text-white"><span className="text-sky-normal">Medicalendar</span> donde la salud y la atención al cliente es nuestra prioridad.</p>
             <button className="btn btn-primary bg-[#1AA7EC] text-white">Conocer más</button>
           </div>
         </div>

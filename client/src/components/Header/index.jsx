@@ -5,13 +5,13 @@ const Header = () => {
   const [navbar, setNavbar] = useState(false);
   return (
     <nav className="sticky top-0 z-50 h-[80px] w-full bg-light-grey shadow">
-      <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
+      <div className="justify-between px-0 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
             <div>
               <Link to={"/"}>
                 <img
-                  className="fill-current w-[12rem]"
+                  className="fill-current w-[15rem]"
                   src={LogoNav}
                   alt="medicalendar logo"
                   aria-label="medicalendar logo"
@@ -58,11 +58,11 @@ const Header = () => {
         </div>
         <div>
           <div
-            className={`flex-1 bg-white justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
+            className={`flex-1 bg-white justify-self-center pb-3 mt-0 md:block md:pb-0 md:mt-0 ${
               navbar ? "block" : "hidden"
             }`}
           >
-            <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0 font-sans">
+            <ul className="items-center bg-light-grey justify-center space-y-8 md:flex md:space-x-6 md:space-y-0 font-sans px-5">
               <li className="text-dark-text hover:text-sky-fluor hover:underline">
                 <Link to={"/"}>Inicio</Link>
               </li>
@@ -76,7 +76,7 @@ const Header = () => {
                 <Link to={"/contact"}>Contacto</Link>
               </li>
             </ul>
-            <div className="mt-3 space-y-2 lg:hidden md:inline-block">
+            {/* <div className="mt-3 space-y-2 lg:hidden md:inline-block">
               <Link to={"login"}>
                 <button className="inline-block w-full px-4 py-2 text-center text-white bg-sky-normal rounded-md shadow hover:bg-sky-fluor">
                   Iniciar sesión
@@ -87,12 +87,12 @@ const Header = () => {
                   Crear cuenta
                 </button>
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
-        <div className="hidden space-x-2 md:inline-block">
+        <div className="hidden space-x-0 md:inline-block mx-10">
           <Link to={"login"}>
-            <button className="px-4 py-2 text-white bg-sky-normal rounded-md shadow hover:bg-sky-fluor">
+            <button className="px-4 py-1.5 text-white bg-sky-normal rounded-md shadow hover:bg-sky-fluor">
               Iniciar sesión
             </button>
           </Link>
