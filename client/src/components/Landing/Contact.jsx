@@ -5,7 +5,7 @@ const Contact = () => {
     <section className="bg-light-grey">
       <div className="flex items-center justify-center p-12">
         <div className="mx-auto w-full max-w-[550px]">
-          <h1 className="text-5xl font-bold mb-14">Contacto</h1>
+          <h1 className="text-5xl font-bold mb-14">Consúltanos</h1>
           <form>
             <div className="-mx-3 flex flex-wrap">
               <div className="w-full px-3 sm:w-1/2">
@@ -66,7 +66,7 @@ const Contact = () => {
                     for="question"
                     className="mb-3 block text-base font-medium text-[#07074D]"
                   >
-                    Preguntas / Comentarios
+                    Mensaje
                   </label>
                   <textarea
                     type="textarea"
