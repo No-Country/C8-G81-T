@@ -16,6 +16,10 @@ function Login() {
 
   const navigate = useNavigate()
 
+  const handleProfile = () => {
+    navigate('/profile')
+  }
+
   return (
     <>
       <Formik
@@ -65,7 +69,7 @@ function Login() {
                 <p className="error">
                   {errors.password && touched.password && errors.password}
                 </p>
-                <button type="submit">Iniciar sesión</button>
+                <button onClick={handleProfile} >Iniciar sesión</button>
               </form>
             </div>
           </div>
