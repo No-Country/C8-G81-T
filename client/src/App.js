@@ -1,5 +1,6 @@
 import React, { Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
+
 const Login = React.lazy(() => import("./components/Login"));
 const DefaultLayout = React.lazy(() => import("./layout/DefaultLayout"));
 const Home = React.lazy(() => import("./views/Home/"));

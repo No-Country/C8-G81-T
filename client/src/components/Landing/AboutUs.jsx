@@ -1,6 +1,6 @@
 const AboutUs = () => {
   return (
-    <section>
+    <section id="us">
       <div className="hero min-h-screen bg-base-200">
         <div className="hero-content flex-col lg:flex-row">
           <img src= './images/aboutus_bg.jpeg' className=" lg:max-w-3xl md:max-w-2xl max-w-xs rounded-lg shadow-2xl" alt="doctor"/>
