@@ -2,7 +2,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <section>
+    <section >
       <div className="hero min-h-[600px] max-h-11" style={{ backgroundImage: `url('./images/herobg.avif')` }}>
         <div className="hero-overlay bg-opacity-60"></div>
         <div className="hero-content text-center text-neutral-content relative">
@@ -13,9 +13,9 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="resume_features flex justify-around flex-wrap my-6 gap-y-5">
+      <div className="resume_features flex justify-around flex-wrap my-6 gap-y-5" >
 
-        <div className="flex flex-col items-center w-[215px]">
+        <div className="flex flex-col items-center w-[215px]" id="services" >
           <span class="fa-stack fa-3x mb-4">
             <i class="fa fa-circle fa-stack-2x text-sky-light"></i>
             <i class="fa fa-headset fa-stack-1x text-white"></i>
@@ -24,7 +24,7 @@ const Hero = () => {
             <p>ORIENTACIÓN MÉDICA</p><p>TELEFÓNICA 24hs.</p><p>011-4363-4710 (AMBA)</p><p>0800-122-1040 (Int del país)</p>
           </div>
         </div>
-        <div className="flex flex-col items-center w-[215px]">
+        <div className="flex flex-col items-center w-[215px]" >
           <span className="fa-stack fa-3x mb-4">
             <i className="fa fa-circle fa-stack-2x text-sky-light"></i>
             <i className="fa fa-lock fa-stack-1x fa-truck-medical text-white"></i>
