@@ -1,12 +1,12 @@
 import React from "react";
 import Footer from "../components/Footer";
-import Header from "../components/Header";
+// import Header from "../components/Header/Header";
 import { Outlet } from "react-router-dom";
 
 const DefaultLayout = () => {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <Outlet />
       <Footer />
     </>

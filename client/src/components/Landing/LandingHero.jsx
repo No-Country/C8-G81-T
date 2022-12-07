@@ -3,6 +3,7 @@ import React from "react";
 const Hero = () => {
   return (
     <section >
+      
       <div className="hero min-h-[600px] max-h-11" style={{ backgroundImage: `url('./images/herobg.avif')` }}>
         <div className="hero-overlay bg-opacity-60"></div>
         <div className="hero-content text-center text-neutral-content relative">

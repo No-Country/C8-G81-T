@@ -2,7 +2,7 @@ import React from "react";
 import Logo from "../../assets/Logo-text-negative.png";
 const Footer = () => {
   return (
-    <footer className="absolute footer footer-center p-10 bg-sky-normal text-primary-content inset-x-0">
+    <footer className="absolute footer footer-center p-1 bg-sky-normal text-primary-content inset-x-0">
       <div>
         <img
           className="inline-block fill-current w-4/5 "
