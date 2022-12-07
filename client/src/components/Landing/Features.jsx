@@ -275,7 +275,48 @@ const Features = () => {
                 </div>
             </div>
 
-      
+
+            <div className="flex items-center justify-around w-full mx-auto mb-14">
+                <div>
+                    <img src="./images/swissMedical.png" alt="" />
+                </div>
+                <div>
+                    <img src="./images/osde.png" alt="" />
+                </div>
+                <div>
+                    <img src="./images/medicus.png" alt="" />
+                </div>
+                <div>
+                    <img src="./images/galeno.png" alt="" />
+                </div>
+            </div>
+
+            <div className=" mt-20 mb-14 w-full">
+                <h3 className="text-5xl font-bold mb-10 mx-5">Nos puedes conseguir en... </h3>
+                <div className="flex flex-col sm:flex sm:flex-row gap-9 justify-center items-center">
+                    <div>
+                        <div className="rounded-full h-20 py-3 px-8 flex items-center w-64 sm:w-80 shadow-md cursor-pointer">
+                            <img className="inline-block w-16" src="./images/google_play_store.png" alt="" />
+                            <div className=" flex flex-col ml-4">
+                                <span>Get It On</span>
+                                <span className="font-bold">Google Play Store</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div className="rounded-full h-20 py-3 px-8 flex items-center w-64 sm:w-80 shadow-md cursor-pointer">
+                            <img className="inline-block w-12" src="./images/apple_store.png" alt="" />
+                            <div className=" flex flex-col ml-4">
+                                <span>Download on the</span>
+                                <span className="font-bold">Apple Store</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
         </section>
 
     );
