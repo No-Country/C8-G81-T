@@ -13,23 +13,23 @@ const DropDown = () => {
                             </div>
                         </label>
                         <ul tabIndex={0} className="menu dropdown-content p-2 shadow bg-base-100 rounded-box w-52 mt-4">
-                            <li><a><div className="flex items-center justify-between cursor-pointer">
+                            <li><a href="#;"><div className="flex items-center justify-between cursor-pointer">
                                 <p>Mi historia clínica</p>
                                 <img src="./images/clincal_record.png" alt="" />
                             </div></a></li>
-                            <li><a><div className="flex items-center justify-between cursor-pointer">
+                            <li><a href="#;"><div className="flex items-center justify-between cursor-pointer">
                                 <p>Activar Notificaciones</p>
                                 <div><i class="fa-solid fa-toggle-off text-[2rem]"></i></div>
                             </div></a></li>
-                            <li><a><div className="flex items-center justify-between cursor-pointer">
+                            <li><a href="#;"><div className="flex items-center justify-between cursor-pointer">
                                 <p>Descargar Historia</p>
                                 <div><i class="fa-solid fa-download text-[2rem]"></i></div>
                             </div></a></li>
-                            <li><a><div className="flex items-center justify-between cursor-pointer">
+                            <li><a href="#;"><div className="flex items-center justify-between cursor-pointer">
                                 <p>Historial de Turnos</p>
                                 <img src="./images/cardio.png" alt="" />
                             </div></a></li>
-                            <li><a><div className="flex items-center justify-between cursor-pointer">
+                            <li><a href="#;"><div className="flex items-center justify-between cursor-pointer">
                                 <p>Cerrar Cuenta</p>
                                 <div><i class="fa-solid fa-trash-can text-[2rem]"></i></div>
                             </div></a></li>
