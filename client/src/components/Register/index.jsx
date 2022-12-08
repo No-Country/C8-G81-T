@@ -61,7 +61,7 @@ const handleLogin = () => {
       <div className="flex flex-col sm:flex sm:flex-row gap-9 justify-center items-center mt-20">
         <div>
           <div className="rounded-full h-20 py-3 px-8 flex items-center w-64 sm:w-80 shadow-md cursor-pointer">
-            <img className="inline-block w-16" src="./images/google_play_store.png" alt="" />
+            <img className="inline-block w-6" src="./images/facebook.png" alt="" />
             <div className="ml-4">
               <span>Continua con</span>
               <span className="ml-1 font-bold">Facebook</span>
@@ -70,7 +70,7 @@ const handleLogin = () => {
         </div>
         <div>
           <div className="rounded-full h-20 py-3 px-8 flex items-center w-64 sm:w-80 shadow-md cursor-pointer">
-            <img className="inline-block w-12" src="./images/apple_store.png" alt="" />
+            <img className="inline-block w-12" src="./images/google.png" alt="" />
             <div className="gap-1 ml-4">
               <span>Continúa con</span>
               <span className="ml-1 font-bold">Google</span>
