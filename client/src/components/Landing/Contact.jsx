@@ -5,7 +5,7 @@ const Contact = () => {
     <section className="bg-light-grey" id="contact">
       <div className="flex items-center justify-center p-12">
         <div className="mx-auto w-full max-w-[550px]">
-          <h1 className="text-5xl font-bold mb-14">Consúltanos</h1>
+          <h1 className="text-3xl sm:text-5xl font-bold mb-14">Consúltanos</h1>
           <form>
             <div className="-mx-3 flex flex-wrap">
               <div className="w-full px-3 sm:w-1/2">

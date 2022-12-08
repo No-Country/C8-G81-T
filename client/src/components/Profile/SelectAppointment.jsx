@@ -11,10 +11,10 @@ const SelectAppointment = () => {
     return (
         <div>
 
-            <div className="hero min-h-screen bg-base-200 relative">
+            <div className="hero h-96 md:min-h-screen bg-base-200 relative">
                 <div className="hero-content text-center">
                     <div className="max-w-md">
-                        <h1 className="text-5xl font-bold">Selecciona...</h1>
+                        <h1 className="text-xl md:text-5xl font-bold">Selecciona...</h1>
                         <div className='flex gap-10 justify-center mt-10 '>
                             <div>
                                 <label htmlFor="">Fecha:</label>
@@ -27,7 +27,7 @@ const SelectAppointment = () => {
                         </div>
                     </div>
                 </div>
-                <label htmlFor="my-modal" className="absolute bottom-10 left-3/4 rounded-xl bg-cyan-500 px-5 py-0 text-white border-none normal-case">Siguiente</label>
+                <label htmlFor="my-modal" className="absolute bottom-3 sm:bottom-10 sm:left-3/4 rounded-xl bg-cyan-500 px-5 py-0 text-white border-none normal-case">Siguiente</label>
                 <input type="checkbox" id="my-modal" className="modal-toggle" />
                 <div className="modal">
                     <div className="modal-box">

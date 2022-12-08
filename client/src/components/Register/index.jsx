@@ -3,6 +3,7 @@ import React from 'react';
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import { useNavigate } from 'react-router-dom';
+import Header from '../Header/Header';
 
 const Register = () => {
 
@@ -52,6 +53,7 @@ const Register = () => {
 
   return (
     <div>
+      <Header/>
       <Formik
         initialValues={initialCredentials}
         validationSchema={registerSchema}

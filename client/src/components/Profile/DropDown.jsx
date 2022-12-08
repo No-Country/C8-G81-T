@@ -2,14 +2,14 @@ import React from 'react'
 
 const DropDown = () => {
     return (
-        <div className="navbar rounded-box">
+        <div className="navbar rounded-box absolute top-0">
             <div className="flex justify-end flex-1 px-2">
                 <div className="flex items-stretch">
                     <div className="dropdown dropdown-end">
                         <label tabIndex={0} className="btn btn-ghost rounded-btn h-[70px]">
-                            <div className="space-x-0 flex items-center gap-5 btn]">
+                            <div className="space-x-0 flex justify-between items-end gap-5 btn]">
+                                <p className='ml-[14%] normal-case'>Bienvenido,<span className='font-bold'>Alinson</span></p>
                                 <img className='w-16' src="./images/manface.png" alt="" />
-                                <p className='ml-5'>Bienvenido,<span className='font-bold'>Alinson</span></p>
                             </div>
                         </label>
                         <ul tabIndex={0} className="menu dropdown-content p-2 shadow bg-base-100 rounded-box w-52 mt-4">

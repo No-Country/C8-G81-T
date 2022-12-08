@@ -1,10 +1,20 @@
 import { useState } from "react";
 // import { Link } from "react-router-dom";
 import LogoNav from "../../assets/Logo-text.png";
-import { HashLink as Link} from "react-router-hash-link"
+import { HashLink as Link } from "react-router-hash-link"
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
   const [navbar, setNavbar] = useState(false);
+
+  const navigate = useNavigate()
+
+  const handleGoLogin = () => {
+    navigate('/login')
+  }
+  const handleGoRegister = () => {
+    navigate('/register')
+  }
   return (
     <nav className="sticky top-0 z-50 h-[80px] w-full bg-light-grey shadow">
       <div className="justify-between px-0 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
@@ -60,9 +70,8 @@ const Header = () => {
         </div>
         <div>
           <div
-            className={`flex-1 bg-white justify-self-center pb-3 mt-0 md:block md:pb-0 md:mt-0 ${
-              navbar ? "block" : "hidden"
-            }`}
+            className={`flex-1 bg-white justify-self-center pb-3 mt-0 md:block md:pb-0 md:mt-0 ${navbar ? "block" : "hidden"
+              }`}
           >
             <ul className="items-center bg-light-grey justify-center space-y-8 md:flex md:space-x-6 md:space-y-0 font-sans px-5">
               <li className="text-dark-text hover:text-sky-fluor hover:underline">
@@ -77,10 +86,13 @@ const Header = () => {
               <li className="text-dark-text hover:text-sky-fluor hover:underline">
                 <Link to={"#contact"}>Contacto</Link>
               </li>
+              <li onClick={handleGoLogin} className={` ${navbar ? 'block' : "hidden"}`}>Iniciar Sesión</li>
+              <li onClick={handleGoRegister} className={` ${navbar ? 'block' : "hidden"}`}> Crear Cuenta</li>
+
             </ul>
           </div>
         </div>
-        <div className="hidden space-x-0 md:inline-block mx-10">
+        <div className=" space-x-0 md:inline-block mx-10 hidden">
           <Link to={"login"}>
             <button className="px-4 py-1.5 text-white bg-sky-normal rounded-md shadow hover:bg-sky-fluor">
               Iniciar sesión
