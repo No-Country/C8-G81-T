@@ -115,7 +115,7 @@ const Contact = () => {
               </div>
             </div>
 
-            <div>
+            <div className="flex justify-center">
               <button
                 className="hover:shadow-form rounded-md bg-[#1AA7EC] py-3 px-8 text-center text-base font-semibold text-white outline-none"
               >

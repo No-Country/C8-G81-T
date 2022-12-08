@@ -1,7 +1,16 @@
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
+import { useNavigate } from 'react-router-dom';
+
 
 const Features = () => {
+
+const navigate = useNavigate()
+
+const handleRegister = () => {
+    navigate('/register')
+}
+
     return (
         <section className="relative">
             <div className="container mx-auto">
@@ -270,7 +279,7 @@ const Features = () => {
                         <div className=" text-xs md:text-sm px-4 py-2 bg-[#4ADFDD] rounded">Traumatología</div>
                     </div>
                     <div>
-                        <div className="flex gap-2 items-center justify-center mr-10 text-xs md:text-sm px-4 py-2 bg-[#4ADFDD] rounded cursor-pointer">Ingresar<i className="fa-solid fa-circle-right inline-block"></i></div>
+                        <div onClick={handleRegister} className="flex gap-2 items-center justify-center mr-10 text-xs md:text-sm px-4 py-2 bg-[#4ADFDD] rounded cursor-pointer">Ingresar<i className="fa-solid fa-circle-right inline-block"></i></div>
                     </div>
                 </div>
             </div>
