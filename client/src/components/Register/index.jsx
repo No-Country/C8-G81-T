@@ -51,9 +51,34 @@ const Register = () => {
 
   });
 
+const handleLogin = () => {
+  navigate('/login')
+}
+
   return (
     <div>
-      <Header/>
+      <Header />
+      <div className="flex flex-col sm:flex sm:flex-row gap-9 justify-center items-center mt-20">
+        <div>
+          <div className="rounded-full h-20 py-3 px-8 flex items-center w-64 sm:w-80 shadow-md cursor-pointer">
+            <img className="inline-block w-6" src="./images/facebook.png" alt="" />
+            <div className="ml-4">
+              <span>Continua con</span>
+              <span className="ml-1 font-bold">Facebook</span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div className="rounded-full h-20 py-3 px-8 flex items-center w-64 sm:w-80 shadow-md cursor-pointer">
+            <img className="inline-block w-12" src="./images/google.png" alt="" />
+            <div className="gap-1 ml-4">
+              <span>Continúa con</span>
+              <span className="ml-1 font-bold">Google</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
       <Formik
         initialValues={initialCredentials}
         validationSchema={registerSchema}
@@ -68,29 +93,9 @@ const Register = () => {
       >
         {({ errors, touched, isSubmitting }) => (
           <div className='login flex-1'>
-            <Form className='form'>
-            <span>Registro</span>
-              <label htmlFor="userFirstName">Nombre:</label>
-              <Field
-                id="userFirstName"
-                name="userFirstName"
-                placeholder="Ingresar nombre"
-                type="text"
-              />
-              {errors.userName && touched.userName && (
-                <ErrorMessage className='error' component="div" name="userFirstName" />
-              )}
-              <label htmlFor="userLastname">Apellido:</label>
-              <Field
-                id="userLastname"
-                name="userLastname"
-                placeholder="Ingresar apellido"
-                type="text"
-              />
-              {errors.userLastname && touched.userLastname && (
-                <ErrorMessage className='error' component="div" name="userLastname" />
-              )}
-              <label htmlFor="userEmail">Email:</label>
+            <Form className='form w-[80%] md:w-[100%]'>
+              <p className='text-[1.2rem] mb-3'>o continua con</p>
+              <label htmlFor="userEmail">Correo electrónico:</label>
               <Field
                 id="userEmail"
                 name="userEmail"
@@ -100,26 +105,7 @@ const Register = () => {
               {errors.userEmail && touched.userEmail && (
                 <ErrorMessage className='error' component="div" name="userEmail" />
               )}
-              <label htmlFor="userDni">DNI:</label>
-              <Field
-                id="userDni"
-                name="userDni"
-                placeholder=""
-                type="number"
-              />
-              {errors.userDni && touched.userDni && (
-                <ErrorMessage className='error' component="div" name="userDni" />
-              )}
-              <label htmlFor="userPhone">Telefono:</label>
-              <Field
-                id="userPhone"
-                name="userPhone"
-                placeholder=""
-                type="number"
-              />
-              {errors.userPhone && touched.userPhone && (
-                <ErrorMessage className='error' component="div" name="userPhone" />
-              )}
+
               <label htmlFor="userPassword">Contraseña:</label>
               <Field
                 id="userPassword"
@@ -130,22 +116,17 @@ const Register = () => {
               {errors.userPassword && touched.userPassword && (
                 <ErrorMessage className='error' component="div" name="userPassword" />
               )}
-              <label htmlFor="userPasswordConfirm">Repetir contraseña:</label>
-              <Field
-                id="userPasswordConfirm"
-                name="userPasswordConfirm"
-                type="password"
-                placeholder="Repite para confirmar la contraseña"
-              />
-              {errors.userPasswordConfirm && touched.userPasswordConfirm && (
-                <ErrorMessage className='error' component="div" name="userPasswordConfirm" />
-              )}
-              <button type="submit">Registrarme</button>
+              <div>
+                <input type="checkbox" />
+                <label htmlFor="">Acepto</label>
+              </div>
+              <button className='rounded' type="submit">Regístrate</button>
               {isSubmitting ? (
                 <div>
                   <p>Creando el Registro...</p>
                 </div>
               ) : null}
+              <p className='mt-8'>¿Tienes una cuenta? <a onClick={handleLogin} href="#;"><p className='font-bold text-cyan-700'>Inicia Sesión</p></a></p>
             </Form>
           </div>
         )}
