@@ -2,6 +2,7 @@ import '../../styles/Login.css'
 import { Formik } from "formik";
 import * as Yup from "yup";
 import { useNavigate } from 'react-router-dom';
+import Header from '../Header/Header';
 
 const schema = Yup.object().shape({
   email: Yup.string()
@@ -22,6 +23,7 @@ function Login() {
 
   return (
     <>
+    <Header/>
       <Formik
         validationSchema={schema}
         initialValues={{ email: "", password: "" }}
@@ -51,7 +53,7 @@ function Login() {
                   onBlur={handleBlur}
                   value={values.email}
                   placeholder="Enter email id / username"
-                  className="form-control inp_text"
+                  className="form-control inp_text w-full"
                   id="email"
                 />
                 <p className="error">
