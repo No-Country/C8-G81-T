@@ -38,7 +38,7 @@ const handleRegister = () => {
                                         </Slide>
                                         <Slide index={1}>
                                             <div className="flex flex-shrink-0 relative w-full sm:w-auto">
-                                                <img src="./images/prescription.avif" alt="sitting area" className="object-cover object-center w-full" />
+                                                <img src="/images/prescription1.jpeg" alt="sitting area" className="object-cover object-center w-full" />
                                                 <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
                                                     <div className="flex h-full items-end pb-6">
                                                         <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">Receta de medicamentos</h3>
@@ -48,7 +48,7 @@ const handleRegister = () => {
                                         </Slide>
                                         <Slide index={2}>
                                             <div className="flex flex-shrink-0 relative w-full sm:w-auto">
-                                                <img src="./images/atenttion.avif" alt="sitting area" className="object-cover object-center w-full" />
+                                                <img src="./images/emergency1.jpeg" alt="sitting area" className="object-cover object-center w-full" />
                                                 <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
                                                     <div className="flex h-full items-end pb-6">
                                                         <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">Atención 24/7</h3>
@@ -58,7 +58,7 @@ const handleRegister = () => {
                                         </Slide>
                                         <Slide index={3}>
                                             <div className="flex flex-shrink-0 relative w-full sm:w-auto">
-                                                <img src="./images/Area.avif" alt="sitting area" className="object-cover object-center w-full" />
+                                                <img src="./images/appoinment1.jpeg" alt="sitting area" className="object-cover object-center w-full" />
                                                 <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
                                                     <div className="flex h-full items-end pb-6">
                                                         <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">Encuentra tu doctor</h3>
@@ -68,7 +68,7 @@ const handleRegister = () => {
                                         </Slide>
                                         <Slide index={4}>
                                             <div className="flex flex-shrink-0 relative w-full sm:w-auto">
-                                                <img src="./images/doctor-patient.avif" alt="black chair and white table" className="object-cover object-center w-full" />
+                                                <img src="./images/areas.jpeg" alt="black chair and white table" className="object-cover object-center w-full" />
                                                 <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
                                                     <div className="flex h-full items-end pb-6">
                                                         <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">Directorio de áreas</h3>
@@ -78,7 +78,7 @@ const handleRegister = () => {
                                         </Slide>
                                         <Slide index={5}>
                                             <div className="flex flex-shrink-0 relative w-full sm:w-auto">
-                                                <img src="./images/family.avif" alt="sitting area" className="object-cover object-center w-full" />
+                                                <img src="./images/family1.jpeg" alt="sitting area" className="object-cover object-center w-full" />
                                                 <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
                                                     <div className="flex h-full items-end pb-6">
                                                         <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">Conéctate con lo que te hace bien</h3>
@@ -121,7 +121,7 @@ const handleRegister = () => {
                                         </Slide>
                                         <Slide index={1}>
                                             <div className="flex flex-shrink-0 relative w-full sm:w-auto">
-                                                <img src="./images/prescription.avif" alt="sitting area" className="object-cover object-center w-full" />
+                                                <img src="/images/prescription1.jpeg" alt="sitting area" className="object-cover object-center w-full" />
                                                 <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
                                                     <div className="flex h-full items-end pb-6">
                                                         <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">Receta de medicamentos</h3>
@@ -131,7 +131,7 @@ const handleRegister = () => {
                                         </Slide>
                                         <Slide index={2}>
                                             <div className="flex flex-shrink-0 relative w-full sm:w-auto">
-                                                <img src="./images/atenttion.avif" alt="sitting area" className="object-cover object-center w-full" />
+                                                <img src="./images/emergency1.jpeg" alt="sitting area" className="object-cover object-center w-full" />
                                                 <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
                                                     <div className="flex h-full items-end pb-6">
                                                         <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">Atención 24/7</h3>
@@ -141,7 +141,7 @@ const handleRegister = () => {
                                         </Slide>
                                         <Slide index={3}>
                                             <div className="flex flex-shrink-0 relative w-full sm:w-auto">
-                                                <img src="./images/Area.avif" alt="sitting area" className="object-cover object-center w-full" />
+                                                <img src="./images/appoinment1.jpeg" alt="sitting area" className="object-cover object-center w-full" />
                                                 <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
                                                     <div className="flex h-full items-end pb-6">
                                                         <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">Encuentra tu doctor</h3>
@@ -151,7 +151,7 @@ const handleRegister = () => {
                                         </Slide>
                                         <Slide index={4}>
                                             <div className="flex flex-shrink-0 relative w-full sm:w-auto">
-                                                <img src="./images/doctor-patient.avif" alt="black chair and white table" className="object-cover object-center w-full" />
+                                                <img src="./images/areas.jpeg" alt="black chair and white table" className="object-cover object-center w-full" />
                                                 <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
                                                     <div className="flex h-full items-end pb-6">
                                                         <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">Directorio de áreas</h3>
@@ -161,7 +161,7 @@ const handleRegister = () => {
                                         </Slide>
                                         <Slide index={5}>
                                             <div className="flex flex-shrink-0 relative w-full sm:w-auto">
-                                                <img src="./images/family.avif" alt="sitting area" className="object-cover object-center w-full" />
+                                                <img src="./images/family1.jpeg" alt="sitting area" className="object-cover object-center w-full" />
                                                 <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
                                                     <div className="flex h-full items-end pb-6">
                                                         <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">Conéctate con lo que te hace bien</h3>
@@ -204,7 +204,7 @@ const handleRegister = () => {
                                         </Slide>
                                         <Slide index={1}>
                                             <div className="flex flex-shrink-0 relative w-full sm:w-auto">
-                                                <img src="./images/prescription.avif" alt="sitting area" className="object-cover object-center w-full" />
+                                                <img src="/images/prescription1.jpeg" alt="sitting area" className="object-cover object-center w-full" />
                                                 <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
                                                     <div className="flex h-full items-end pb-6">
                                                         <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">Receta de medicamentos</h3>
@@ -214,7 +214,7 @@ const handleRegister = () => {
                                         </Slide>
                                         <Slide index={2}>
                                             <div className="flex flex-shrink-0 relative w-full sm:w-auto">
-                                                <img src="./images/atenttion.avif" alt="sitting area" className="object-cover object-center w-full" />
+                                                <img src="./images/emergency1.jpeg" alt="sitting area" className="object-cover object-center w-full" />
                                                 <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
                                                     <div className="flex h-full items-end pb-6">
                                                         <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">Atención 24/7</h3>
@@ -224,7 +224,7 @@ const handleRegister = () => {
                                         </Slide>
                                         <Slide index={3}>
                                             <div className="flex flex-shrink-0 relative w-full sm:w-auto">
-                                                <img src="./images/Area.avif" alt="sitting area" className="object-cover object-center w-full" />
+                                                <img src="./images/appoinment1.jpeg" alt="sitting area" className="object-cover object-center w-full" />
                                                 <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
                                                     <div className="flex h-full items-end pb-6">
                                                         <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">Encuentra tu doctor</h3>
@@ -234,7 +234,7 @@ const handleRegister = () => {
                                         </Slide>
                                         <Slide index={4}>
                                             <div className="flex flex-shrink-0 relative w-full sm:w-auto">
-                                                <img src="./images/doctor-patient.avif" alt="black chair and white table" className="object-cover object-center w-full" />
+                                                <img src="./images/areas.jpeg" alt="black chair and white table" className="object-cover object-center w-full" />
                                                 <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
                                                     <div className="flex h-full items-end pb-6">
                                                         <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">Directorio de áreas</h3>
@@ -244,7 +244,7 @@ const handleRegister = () => {
                                         </Slide>
                                         <Slide index={5}>
                                             <div className="flex flex-shrink-0 relative w-full sm:w-auto">
-                                                <img src="./images/family.avif" alt="sitting area" className="object-cover object-center w-full" />
+                                                <img src="./images/family1.jpeg" alt="sitting area" className="object-cover object-center w-full" />
                                                 <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
                                                     <div className="flex h-full items-end pb-6">
                                                         <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">Conéctate con lo que te hace bien</h3>
